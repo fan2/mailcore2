@@ -1,3 +1,15 @@
+- 测试 SMTPSession
+
+static void testSMTP(mailcore::Data * data)  
+static void testSendingMessageFromFileViaSMTP(mailcore::Data * data)  
+> SMTPSession(ConnectionTypeStartTLS)
+
+- 测试 SMTPAsyncSession
+
+static void testAsyncSMTP(mailcore::Data * data)  
+static void testAsyncSendMessageFromFileViaSMTP(mailcore::Data * data)  
+> SMTPAsyncSession(ConnectionTypeStartTLS) - SMTPOperation
+
 ## testAsyncSMTP
 ```
 static void testAsyncSMTP(mailcore::Data * data)
