@@ -77,17 +77,17 @@ class MAILCORE_EXPORT SMTPSendWithDataOperation : public SMTPOperation
 ```
 
 ```
-    class MAILCORE_EXPORT SMTPOperation : public Operation, public SMTPProgressCallback {
-    public:
-        
-        virtual void setSession(SMTPAsyncSession * session);
-        virtual SMTPAsyncSession * session();
-        
-        virtual void setSmtpCallback(SMTPOperationCallback * callback);
-        virtual SMTPOperationCallback * smtpCallback();
-        
-        virtual void start();
-    }
+class MAILCORE_EXPORT SMTPOperation : public Operation, public SMTPProgressCallback {
+public:
+
+	virtual void setSession(SMTPAsyncSession * session);
+	virtual SMTPAsyncSession * session();
+
+	virtual void setSmtpCallback(SMTPOperationCallback * callback);
+	virtual SMTPOperationCallback * smtpCallback();
+
+	virtual void start();
+}
 ```
 
 ```
@@ -120,8 +120,8 @@ void SMTPSendWithDataOperation::main()
 > SMTPSession::sendMessage
 >> SMTPSession::loginIfNeeded
 >>
->>> connect(mailsmtp_socket_connect/mailsmtp_ssl_connect)
+>>> connect(mailsmtp_socket_connect/mailsmtp_ssl_connect)  
 >>> login(mailesmtp_auth)）
 >>
->> esmtp_address_list_add
+>> esmtp_address_list_add  
 >> mailesmtp_send
