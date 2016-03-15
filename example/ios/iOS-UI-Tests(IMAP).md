@@ -179,7 +179,7 @@ IMAPFetchMessagesOperation : IMAPOperation
 // mailcore2/src/objc/imap/MCOIMAPFetchMessagesOperation.h
 MCOIMAPFetchMessagesOperation : MCOIMAPBaseOperation : MCOOperation
 
-### MasterViewController
+### loadLastNMessages
 
 ```
 - (void)loadLastNMessages:(NSUInteger)nMessages
